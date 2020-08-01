@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Meta tag start-->
+	<meta charset="utf-8" />
+	<meta name="author" content="Ivan Jovkovic" />
+	<meta name="description" content=" " />
+	<meta name="keywords" content=" " />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Hair Saloon</title>
+	<meta name="theme-color" content="#000000" />
+	<meta name="msapplication-navbutton-color" content="#000000" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+	<!-- Meta tag end-->
+	<!-- Favicon start -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<!-- Favicon end -->
+	<!-- CSS and Bootstrap 4 links start -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+	<link rel="stylesheet" href="css/flag-icon.min.css" />
+	<link rel="stylesheet" href="css/lightgallery.min.css" />
+	<link rel="stylesheet" href="css/hamburgers.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- CSS and Bootstrap 4 links end -->
+</head>
+
+<body onload="loader()">
+	<!-- Loader start -->
+	<div id="loader"></div>
+	<!-- Loader end -->
+	<!-- Order now start -->
+<!--
+	<div id="order">
+		<a href="/order/restourand" target="_blank">
+			<img src="img/order.png" />
+		</a>
+	</div>
+-->
+	<!-- Order now end -->
+	<!-- App start -->
+	<div id="app">
+		<!-- topBar start -->
+		<div id="topBar" class="d-md-none">
+			<div id="language" class="dropdown-topBar d-md-none">
+				<button class="dropbtn-topBar">
+					<span class="flag-icon flag-icon-rs"></span>
+				</button>
+				<div class="dropdown-content-topBar">
+					<a href="javascript:void(0)">
+						<span class="flag-icon flag-icon-rs"></span>Serbian
+					</a>
+					<a href="javascript:void(0)">
+						<span class="flag-icon flag-icon-gb"></span>English
+					</a>
+					<a href="javascript:void(0)">
+						<span class="flag-icon flag-icon-fr"></span>Français
+					</a>
+					<a href="javascript:void(0)">
+						<span class="flag-icon flag-icon-de"></span>Deutch
+					</a>
+				</div>
+			</div>
+			<button class="hamburger hamburger--elastic-r" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<ul class="topBar">
+				<li><a href="#app">Home</a></li>
+				<li><a href="#schedule">Scheduling</a></li>
+				<li><a href="#products">Products</a></li>
+				<li><a href="#promotions">Promotions</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li class="social">
+					<a href="javascript:void(0)">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="javascript:void(0)">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="javascript:void(0)">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="javascript:void(0)">
+						<i class="fab fa-youtube"></i>
+					</a>
+					<a href="javascript:void(0)">
+						<i class="far fa-envelope"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- topBar end -->
+		<!-- Header start -->
+		<header class="d-none d-md-block">
+			<!-- Top-menu start -->
+			<div id="top-menu">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6 p-md-0">
+							<div class="dropdown-language">
+								<button class="dropbtn-language">
+									<i class="far fa-flag mr-2"></i>Serbian
+								</button>
+								<div class="dropdown-content-language">
+									<a href="javascript:void(0)">
+										<span class="flag-icon flag-icon-rs"></span>Serbian
+									</a>
+									<a href="javascript:void(0)">
+										<span class="flag-icon flag-icon-de"></span>Deutch
+									</a>
+									<a href="javascript:void(0)">
+										<span class="flag-icon flag-icon-gb"></span>English
+									</a>
+									<a href="javascript:void(0)">
+										<span class="flag-icon flag-icon-it"></span>Italiano
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 p-md-0 text-right">
+							<div class="social-div">
+								<div class="social">
+									<a href="javasript:void(0)">
+										<i class="fab fa-facebook-f"></i>
+										<span class="tooltiptext">Facebook</span>
+									</a>
+								</div>
+								<div class="social">
+									<a href="javasript:void(0)">
+										<i class="fab fa-instagram"></i>
+										<span class="tooltiptext">Instagram</span>
+									</a>
+								</div>
+								<div class="social">
+									<a href="javasript:void(0)">
+										<i class="fab fa-twitter"></i>
+										<span class="tooltiptext">Twitter</span>
+									</a>
+								</div>
+								<div class="social">
+									<a href="mailto:javasript:void(0)">
+										<i class="fab fa-youtube"></i>
+										<span class="tooltiptext">YouTube</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Top-menu end -->
+			<!-- Navbar start -->
+			<div id="navbar">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-4 p-0">
+							<div id="logo">
+								<img src="img/logo.png" class="logo" alt="img/logo.png" />
+							</div>
+						</div>
+						<div class="col-md-8 p-0">
+							<nav class="navbar navbar-expand-md float-right">
+								<div class="collapse navbar-collapse">
+									<ul class="navbar-nav mr-auto">
+										<li class="nav-item">
+											<div class="dropdown">
+												<a class="dropbtn" href="#app">Home</a>
+												<div class="dropdown-content">
+													<a href="javascript:void(0)">Link 1</a>
+													<a href="javascript:void(0)">Link 2</a>
+													<a href="javascript:void(0)">Link 3</a>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item">
+											<div class="dropdown">
+												<a class="dropbtn" href="#schedule">Scheduling</a>
+												<div class="dropdown-content">
+													<a href="javascript:void(0)">Link 1</a>
+													<a href="javascript:void(0)">Link 2</a>
+													<a href="javascript:void(0)">Link 3</a>
+													<a href="javascript:void(0)">Link 4</a>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item">
+											<div class="dropdown">
+												<a class="dropbtn" href="#products">Products</a>
+												<div class="dropdown-content">
+													<a href="javascript:void(0)">Link 1</a>
+													<a href="javascript:void(0)">Link 2</a>
+													<a href="javascript:void(0)">Link 3</a>
+													<a href="javascript:void(0)">Link 4</a>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item">
+											<div class="dropdown">
+												<a class="dropbtn" href="#promotions">Promotions</a>
+												<div class="dropdown-content">
+													<a href="javascript:void(0)">Link 1</a>
+													<a href="javascript:void(0)">Link 2</a>
+													<a href="javascript:void(0)">Link 3</a>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item">
+											<div class="dropdown">
+												<a class="dropbtn" href="#gallery">Gallery</a>
+												<div class="dropdown-content">
+													<a href="javascript:void(0)">Link 1</a>
+													<a href="javascript:void(0)">Link 2</a>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item">
+											<div class="dropdown">
+												<i class="fas fa-search"></i>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Navbar end -->
+		</header>
+		<!-- Header end -->
+		<!-- Carousel start -->
+		<div class="container-fluid p-0">
+			<div id="headerCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#headerCarousel" data-slide-to="1"></li>
+					<li data-target="#headerCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<h2 class="text-center">Coiffeur</h2>
+						<img class="d-block w-100" src="img/carousel/img-1.png" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<h2 class="text-center">Coiffeur</h2>
+						<img class="d-block w-100" src="img/carousel/img-2.png" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<h2 class="text-center">Coiffeur</h2>
+						<img class="d-block w-100" src="img/carousel/img-3.png" alt="Third slide">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+					<i class="fas fa-chevron-left"></i>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+					<i class="fas fa-chevron-right"></i>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<!-- Carousel end -->
+		<!-- Content start -->
+		<div id="content">
+			<!-- Awarded start -->
+			<div id="awarded" class="text-center">
+				<div class="container">
+					<h2 class="text-uppercase">Awarded</h2>
+					<div class="divider"></div>
+					<h3>One of the Best Hair Saloons in New York</h3>
+				</div>
+			</div>
+			<!-- Awarded start -->
+			<!-- Schedule start -->
+			<div id="schedule" class="text-center">
+				<div class="container">
+					<h2 class="text-uppercase">Scheduling</h2>
+					<div class="divider"></div>
+					<form>
+						<div class="row align-items-center">
+							<div class="col-md-6">
+								<div class="form-group row">
+									<label for="nameScheduling" class="col-3 col-form-label text-left text-left">Enter name</label>
+									<div class="col-8 col-md-6">
+										<input type="text" class="form-control rounded-0" id="nameScheduling" placeholder="Name" required />
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="mobileScheduling" class="col-3 col-form-label text-left">Enter mobile</label>
+									<div class="col-8 col-md-6">
+										<input type="tel" class="form-control rounded-0" id="mobileScheduling" placeholder="Mobile" required />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group row">
+									<label class="col-3 col-form-label text-left">Hairdresser</label>
+									<div class="col-8 col-md-6">
+										<select class="custom-select rounded-0" id="inputGroupSelect01">
+											<option selected>Choose...</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-3 col-form-label text-left">Date and time</label>
+									<div class='col-8 col-md-6 input-group date'>
+										<input type='text' class="form-control rounded-0" id="datetimepicker" placeholder="Pick date and time" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Schedule end -->
+			<!-- Product start -->
+			<div id="products" class="text-center">
+				<div class="container">
+					<h2 class="text-uppercase">Our products</h2>
+					<div class="divider"></div>
+					<button id="btn-left" class="btn" type="button">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<button id="btn-right" class="btn" type="button">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+					<div id="products-div" class="dragscroll">
+						<div class="row-fluid">
+							<div class="col-12 col-sm-6 col-md-3 p-0">
+								<div class="item" id="item-1">
+									<img src="img/products/1.png" alt="img/products/1.png" />
+									<div class="buy">
+										<button class="btn addProduct text-uppercase">Add to cart</button>
+										<button class="btn seeProduct text-uppercase">See product details</button>
+									</div>
+								</div>
+								<h3 class="name">Gold Max Styler</h3>
+								<h5 class="price"><s class="mr-2">£140.00</s><u>£115.00</u></h5>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 p-0">
+								<div class="item" id="item-2">
+									<img src="img/products/2.jpg" alt="img/products/2.jpg" />
+									<div class="buy">
+										<button class="btn addProduct text-uppercase">Add to cart</button>
+										<button class="btn seeProduct text-uppercase">See product details</button>
+									</div>
+								</div>
+								<h3 class="name">GHD Air</h3>
+								<h5 class="price">£89.00</h5>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 p-0">
+								<div class="item" id="item-3">
+									<img src="img/products/3.jpg" alt="img/products/3.jpg" />
+									<div class="buy">
+										<button class="btn addProduct text-uppercase">Add to cart</button>
+										<button class="btn seeProduct text-uppercase">See product details</button>
+									</div>
+								</div>
+								<h3 class="name">Limited Edition V Coral Styler</h3>
+								<h5 class="price">£129.00</h5>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 p-0">
+								<div class="item" id="item-4">
+									<img src="img/products/4.png" alt="img/products/4.png" />
+									<div class="buy">
+										<button class="btn addProduct text-uppercase">Add to cart</button>
+										<button class="btn seeProduct text-uppercase">See product details</button>
+									</div>
+								</div>
+								<h3 class="name">Chrome Ionic Hairdryer</h3>
+								<h5 class="price">£19.80</h5>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 p-0">
+								<div class="item" id="item-5">
+									<img src="img/products/5.png" alt="img/products/5.png" />
+									<div class="buy">
+										<button class="btn addProduct text-uppercase">Add to cart</button>
+										<button class="btn seeProduct text-uppercase">See product details</button>
+									</div>
+								</div>
+								<h3 class="name">Powerpik Hairdryer</h3>
+								<h5 class="price">£16.20</h5>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 p-0">
+								<div class="item" id="item-6">
+									<img src="img/products/6.png" alt="img/products/6.png" />
+									<div class="buy">
+										<button class="btn addProduct text-uppercase">Add to cart</button>
+										<button class="btn seeProduct text-uppercase">See product details</button>
+									</div>
+								</div>
+								<h3 class="name">Pro-Air Shine Dryer</h3>
+								<h5 class="price">£29.99</h5>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 p-0">
+								<div class="item" id="item-7">
+									<img src="img/products/7.jpg" alt="img/products/7.jpg" />
+									<div class="buy">
+										<button class="btn addProduct text-uppercase">Add to cart</button>
+										<button class="btn seeProduct text-uppercase">See product details</button>
+									</div>
+								</div>
+								<h3 class="name">Moringa for Damaged Hair</h3>
+								<h5 class="price">£28.40</h5>
+							</div>
+							<div class="col-12 col-sm-6 col-md-3 p-0">
+								<div class="item" id="item-8">
+									<img src="img/products/8.jpg" alt="img/products/8.jpg" />
+									<div class="buy">
+										<button class="btn addProduct text-uppercase">Add to cart</button>
+										<button class="btn seeProduct text-uppercase">See product details</button>
+									</div>
+								</div>
+								<h3 class="name">Moroccanoil Treatment Light</h3>
+								<h5 class="price">£31.00</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Product end -->
+			<!-- AntiAge start -->
+			<div id="antiAge" class="text-uppercase">
+				<div class="container">
+					<div class="col-md-6">
+						<h5>We want your hair to look fabulous</h5>
+						<h1>Anti-age your hair!</h1>
+						<p>Scenester Etsy aesthetic, Cosby sweater keytar sustainable forage. Synth vinyl biodiesel, pour-over forage Helvetica selvage XOXO mumblecore literally pop-up locavore. Blue Bottle bicycle rights photo booth, cray single-origin coffee locavore fanny pack American Apparel cornhole hella.</p>
+						<button class="btn rounded-0">See pricing table</button>
+					</div>
+				</div>
+			</div>
+			<!-- AntiAge end -->
+			<!-- Expression start -->
+			<div id="expression">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-4">
+							<img src="img/product.png" class="product" alt="img/product.png" />
+							<h1>Expression of <span class="text-uppercase">Excellence</span></h1>
+							<h4>Protext Color's richness, vibrancy</h4>
+						</div>
+						<div class="col-md-4 text-center">
+							<img src="img/spray.jpg" class="spray" alt="img/spray.png" /></div>
+						<div class="col-md-4">
+							<div id="player-vimeo" style="padding:56.25% 0 0 0;position:relative;">
+								<iframe src="https://player.vimeo.com/video/14723954?color=ffffff" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<h3>Color stays true for 6 weeks until her next service</h3>
+							<button class="btn rounded-0 text-uppercase">Learn more about the product</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Expression end -->
+			<!-- FinOut start -->
+			<div id="findOut" class="text-center text-uppercase">
+				<div class="container">
+					<h5>We care about your hair and your well-being</h5>
+					<h1>Beatiful hair, healthy you</h1>
+					<button class="btn rounded-0">Find out more</button>
+				</div>
+			</div>
+			<!-- FinOut end -->
+			<!-- Promotions start -->
+			<div id="promotions" class="text-uppercase text-center">
+				<div class="container">
+					<h5>Beware of current promotions</h5>
+					<h1>Worth to look</h1>
+					<div id="promotionCarousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="row align-items-center">
+									<div class="col-md-6">
+										<img class="d-block w-100" src="img/promotions/promotion3.jpg" alt="First slide" />
+									</div>
+									<div class="col-md-6 text-center">
+										<p class="text-uppercase font-weight-bold">Readymade cliche next level selfies</p>
+										<button class="btn rounded-0 text-uppercase">See promotion</button>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row align-items-center">
+									<div class="col-md-6">
+										<img class="d-block w-100" src="img/promotions/promotion4.jpg" alt="Second slide" />
+									</div>
+									<div class="col-md-6 text-center">
+										<p class="text-uppercase font-weight-bold">American apparel cornhole hella</p>
+										<button class="btn rounded-0 text-uppercase">See promotion</button>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row align-items-center">
+									<div class="col-md-6">
+										<img class="d-block w-100" src="img/promotions/promotion5.jpg" alt="Third slide" />
+									</div>
+									<div class="col-md-6 text-center">
+										<p class="text-uppercase font-weight-bold">Mustache keytar portland kale chips</p>
+										<button class="btn rounded-0 text-uppercase">See promotion</button>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#promotionCarousel" role="button" data-slide="prev">
+								<i class="fas fa-chevron-left"></i>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#promotionCarousel" role="button" data-slide="next">
+								<i class="fas fa-chevron-right"></i>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Promotions end -->
+			<!-- Item start -->
+			<div id="items">
+				<div class="container-fluid p-0">
+					<div class="row no-gutters">
+						<div class="col-md-4">
+							<div class="item">
+								<a href="javascript:void(0)">
+									<img src="img/items/item-1.jpg" class="item-img" alt="img/items/item-1.jpg" title="Item 1" />
+								</a>
+								<div class="info">
+									<span class="tag">Professional</span>
+									<h2>Meet stylists</h2>
+									<span class="line"></span>
+									<p>Staff of the month</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="item">
+								<a href="javascript:void(0)">
+									<img src="img/items/item-2.jpg" class="item-img" alt="img/items/item-2.jpg" title="Item 2" />
+								</a>
+								<div class="info">
+									<span class="tag">Promotion</span>
+									<h2>Free nail treatment</h2>
+									<span class="line"></span>
+									<p>Event</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="item">
+								<a href="javascript:void(0)">
+									<img src="img/items/item-3.jpg" class="item-img" alt="img/items/item-3.jpg" title="Item 3" />
+								</a>
+								<div class="info">
+									<span class="tag">Explore</span>
+									<h2>New hair of man</h2>
+									<span class="line"></span>
+									<p>Haircuts &amp; styling</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Item start -->
+			<!-- Gallery start -->
+			<div id="gallery">
+				<div class="container p-md-0">
+					<h2 class="text-uppercase">Gallery</h2>
+					<div class="divider"></div>
+					<div id="lightgallery">
+						<a class="col-md-3 item-img" href="img/gallery/1.jpg">
+							<img src="img/gallery/1.jpg" alt="img/gallery/1.jpg" title="1" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/2.jpg">
+							<img src="img/gallery/2.jpg" alt="img/gallery/2.jpg" title="2" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/3.jpg">
+							<img src="img/gallery/3.jpg" alt="img/gallery/3.jpg" title="3" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/4.jpg">
+							<img src="img/gallery/4.jpg" alt="img/gallery/4.jpg" title="4" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/5.jpg">
+							<img src="img/gallery/5.jpg" alt="img/gallery/5.jpg" title="5" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/6.jpg">
+							<img src="img/gallery/6.jpg" alt="img/gallery/6.jpg" title="6" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/7.jpg">
+							<img src="img/gallery/7.jpg" alt="img/gallery/7.jpg" title="7" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/8.jpg">
+							<img src="img/gallery/8.jpg" alt="img/gallery/8.jpg" title="8" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/9.jpg">
+							<img src="img/gallery/9.jpg" alt="img/gallery/9.jpg" title="9" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/10.jpg">
+							<img src="img/gallery/10.jpg" alt="img/gallery/10.jpg" title="10" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/11.jpg">
+							<img src="img/gallery/11.jpg" alt="img/gallery/11.jpg" title="11" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+						<a class="col-md-3 item-img" href="img/gallery/12.jpg">
+							<img src="img/gallery/12.jpg" alt="img/gallery/12.jpg" title="12" />
+							<div class="view">
+								<i class="fas fa-search" title="Open"></i>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Gallery end -->
+		</div>
+		<!-- Content end -->
+	</div>
+	<!-- App end -->
+	<!-- Push footer start -->
+	<div class="push-footer"></div>
+	<!-- Push footer start -->
+	</div>
+	<!-- App end -->
+	<!-- Footer start -->
+	<footer>
+		<div class="container-fluid p-0">
+			<div id="map">
+				<iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.0451059206916!2d20.922132015713522!3d43.99979343796684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475720ef828fad59%3A0x57cbe633ad7d23fd!2sMije+Aleksic%CC%81a%2C+Kragujevac!5e0!3m2!1sen!2srs!4v1536842471460" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+					<h4 class="text-uppercase">Newsletter</h4>
+					<div id="newsletter">
+						<div class="input-group mb-3 col-10 col-md-12 p-0">
+							<input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
+							<div class="input-group-append">
+								<span class="input-group-text" id="basic-addon2">Subscribe</span>
+							</div>
+						</div>
+					</div>
+					<div id="pay">
+						<h4 class="text-uppercase">We accept</h4>
+						<img src="img/pay/visa.png" alt="img/pay/visa.png" title="Visa" />
+						<img src="img/pay/master.png" alt="img/pay/master.png" title="MasterCard" />
+						<img src="img/pay/maestro.png" alt="img/pay/maestro.png" title="Maestro" />
+						<img src="img/pay/ae.png" alt="img/pay/ae.png" title="American Express" />
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+					<h4 class="text-uppercase">About us</h4>
+					<ul class="mb-md-5">
+						<li><a href="">Lorem ipsum</a></li>
+						<li><a href="">Lorem ipsum</a></li>
+						<li><a href="">Lorem ipsum</a></li>
+						<li><a href="">Lorem ipsum</a></li>
+						<li><a href="">Lorem ipsum</a></li>
+					</ul>
+				</div>
+				<div class="col-md-12 col-lg-3 mb-4 mb-md-0 order-md-3 order-lg-2">
+					<div id="contactUs">
+						<h4 class="text-uppercase">Contact Us</h4>
+						<form>
+							<div class="row">
+								<div class="col-md-4 col-lg-12">
+									<div class="form-group">
+										<label for="name">Name (required)</label>
+										<input type="text" class="form-control rounded-0 col-10 col-lg-12" id="name" placeholder="Enter name" required />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-12">
+									<div class="form-group">
+										<label for="exampleInputPassword1">Email (required)</label>
+										<input type="email" class="form-control rounded-0 col-10 col-lg-12" id="email" placeholder="Enter email" required />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-12">
+									<div class="form-group">
+										<label for="messagge">Message</label>
+										<textarea class="form-control rounded-0 col-10 col-lg-12" id="message" rows="3" placeholder="Leave message" required></textarea>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-12">
+									<button type="submit" class="btn rounded-0">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-3 order-md-2 order-lg-3">
+					<div id="openingTime" class="col-10 col-md-12">
+						<h4 class="text-uppercase">Opening time</h4>
+						<ul>
+							<li>
+								<a href="javascript:void(0)">
+									<p class="day">Monday</p><span class="time">08:00-17:30</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<p class="day">Tuesday</p><span class="time">08:00-17:30</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<p class="day">Wednesday</p><span class="time">08:00-17:30</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<p class="day">Thursday</p><span class="time">08:00-17:30</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<p class="day">Friday</p><span class="time">08:00-17:30</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<p class="day">Saturday</p><span class="time">12:00-17:30</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<p class="day">Sunday</p><span class="text-uppercase time">Closed</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer-bottom">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 text-center text-md-left order-1 order-md-0 py-2 py-md-0">
+						<p>© 2018 <a href="http://www.webtory.rs/" target="_blank">Webtory</a> - All Rights Reserved</p>
+					</div>
+					<div class="col-md-6 text-center order-0 order-md-1 text-md-right">
+						<div class="social-div">
+							<div class="social">
+								<a href="javascript:void(0)">
+									<i class="fab fa-facebook-f"></i>
+									<span class="tooltiptext">Facebook</span>
+								</a>
+							</div>
+							<div class="social">
+								<a href="javascript:void(0)">
+									<i class="fab fa-instagram"></i>
+									<span class="tooltiptext">Instagram</span>
+								</a>
+							</div>
+							<div class="social">
+								<a href="javascript:void(0)">
+									<i class="fab fa-twitter"></i>
+									<span class="tooltiptext">Twitter</span>
+								</a>
+							</div>
+							<div class="social">
+								<a href="javascript:void(0)">
+									<i class="fab fa-youtube"></i>
+									<span class="tooltiptext">YouTube</span>
+								</a>
+							</div>
+							<div class="social">
+								<a href="javascript:void(0)">
+									<i class="far fa-envelope"></i>
+									<span class="tooltiptext">Email</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer start -->
+	<!-- back-to-top start -->
+	<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
+	<!-- back-to-top end -->
+	<!-- JavaScript links start -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<!--	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgZv4d0llq6H3LTupaCXL-Vec5a-q7I28&callback=initMap"></script>-->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="https://player.vimeo.com/api/player.js"></script>
+	<script src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="js/lightgallery.min.js"></script>
+	<script type="text/javascript" src="js/lg-thumbnail.min.js"></script>
+	<script type="text/javascript" src="js/lg-fullscreen.min.js"></script>
+	<script type="text/javascript" src="js/lg-zoom.min.js"></script>
+	<script type="text/javascript">
+		lightGallery(document.getElementById('lightgallery'));
+
+	</script>
+	<script type="text/javascript">
+		$(function() {
+			$('#datetimepicker').datetimepicker();
+		});
+
+	</script>
+	<script type="text/javascript" src="js/all.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- JavaScript links end -->
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+// *****************
+// MProperty
+// *****************
+
+.property {
+    &-inner {
+        padding: 76px 0 60px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 71px 0 69px;
+        }
+    }
+
+    &-wrapper {
+        width: 1198px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &-rectangle {
+        &-md {
+            width: 970px;
+            height: 250px;
+            margin-bottom: 91px;
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+
+            &__paragraph {
+                &-resolution {
+                    text-align: center;
+                    width: 194px;
+                    height: 22px;
+                }
+            }
+        }
+
+        &-sm {
+            width: 300px;
+            height: 250px;
+            display: none;
+
+            @include media-breakpoint-down(sm) {
+                display: flex;
+                margin: 0 auto;
+                margin-bottom: 69px;
+            }
+
+            &__paragraph {
+                &-resolution {
+                    text-align: center;
+                    width: 194px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+
+    &-column {
+        width: 1198px;
+        height: 398px;
+        display: flex;
+        justify-content: space-between;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        &-left {
+            width: 543px;
+            height: 339px;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                height: auto;
+                padding: 0 25px;
+            }
+
+            &__heading {
+                width: 546px;
+                height: 91px;
+                color: $ship-gray;
+                font-size: 36px;
+                font-weight: 400;
+                margin-bottom: 20px;
+
+                @include media-breakpoint-down(sm) {
+                    width: 274px;
+                    height: 42px;
+                    margin: 0 auto 20px;
+                    font-size: 18px;
+                }
+            }
+
+            &__paragraph {
+                width: 546px;
+                color: $salt-box;
+                font-size: 20px;
+
+                &-first {
+                    height: 24px;
+                    margin-bottom: 30px;
+
+                    @include media-breakpoint-down(sm) {
+                        width: 270px;
+                        height: 40px;
+                        margin: 0 auto 16px;
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+
+                &-second {
+                    height: 114px;
+                    color: $ship-gray;
+                    font-family: $open-sans;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 27px;
+
+                    @include media-breakpoint-down(sm) {
+                        width: 270px;
+                        height: 134px;
+                        font-size: 14px;
+                        margin: 0 auto 30px;
+                        line-height: 21px;
+                    }
+                }
+            }
+
+            &-button {
+                @include media-breakpoint-down(sm) {
+                    width: 270px;
+                    margin: 0 auto 83px;
+                }
+
+                &__button {
+                    width: 290px;
+                    height: 60px;
+                    border-radius: 30px;
+                    background-color: $cloud-burst;
+                    font-size: 18px;
+
+                    @include media-breakpoint-down(sm) {
+                        width: 100%;
+                    }
+
+                    &--uppercase {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        &-right {
+            width: 540px;
+            height: 398px;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+
+            &__image {
+                width: 540px;
+                height: 335px;
+                margin-top: 33px;
+
+                @include media-breakpoint-down(sm) {
+                    width: 292px;
+                    height: 181px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

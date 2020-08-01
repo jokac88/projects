@@ -1,0 +1,155 @@
+body:before {
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background: url('../img/background/2.jpg') no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#contact {
+	margin: 50px 0;
+	color: #ffffff;
+}
+
+#contact .wrap {
+	color: #ffffff;
+	padding: 20px;
+	background: rgba(50, 25, 50, 0.6);
+}
+
+#contact .contact {
+	background-color: rgb(80, 25, 50);
+}
+
+#contact textarea {
+	border: none;
+	padding: 10px;
+	width: 100%;
+}
+
+#contact textarea:focus::placeholder {
+	color: transparent;
+}
+
+#contact button {
+	min-width: 100px;
+	margin-top: 10px;
+	padding: 9px 12px 8px;
+	background-color: #532032;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all .3s ease;
+}
+
+#contact button:hover {
+	background-color: #491d2c;
+}
+
+#contact iframe {
+	width: 100%;
+	height: 250px;
+}
+
+/* Media queries */
+
+/*----------------------------
+	@media only screen and (max-width: 319px) start
+----------------------------*/
+
+@media only screen and (max-width: 319px) {}
+
+/*----------------------------
+	@media only screen and (max-width: 319px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	
+	#contact {
+		margin: 30px 0;
+	}
+
+	#contact .wrap {
+		padding: 15px;
+	}
+
+	#contact iframe {
+		height: 200px;
+	}
+}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) end
+----------------------------*/

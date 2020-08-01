@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+html,
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #9d0a1c!important;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	min-width: 280px;
+	height: 100%;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+
+i {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+hr {
+	margin-top: 2px;
+}
+
+button:focus,
+input:focus {
+	box-shadow: none!important;
+	outline: none!important;
+}
+
+.container {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+
+.row {
+	margin: 0;
+}
+
+.col {
+	width: 100%;
+}
+
+.clr {
+	clear: both;
+}
+
+.static {
+	position: static!important;
+}
+
+#left {
+	padding: 10px 0;
+	overflow-y: auto;
+	height: 35vh;
+}
+
+#left::-webkit-scrollbar {
+	display: none;
+}
+
+#left .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#left .item img {
+	-webkit-box-shadow: 0px 15px 35px -20px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 15px 35px -20px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 15px 35px -20px rgba(0, 0, 0, 0.75);
+}
+
+#left .first img {
+	margin-bottom: 30px;
+}
+
+#left .second img {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#left .third img {
+	margin-bottom: 45px;
+}
+
+#left .item.first img:last-child,
+#left .item.second img:last-child,
+#left .item.third img:last-child {
+	margin-bottom: 5px;
+}
+
+#right {
+	height: 65vh;
+	padding: 0 30px 10px;
+	-webkit-box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+}
+
+#right h1.header {
+	text-align: center;
+	padding: 10px 0;
+	margin: 0;
+}
+
+#right h1.header a {
+	font-weight: bold;
+	font-size: 20px;
+	color: #9d0a1c;
+}
+
+#right .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#right .form-control {
+	border-bottom: 2px solid #9d0a1c!important;
+	color: #9d0a1c;
+	font-size: 14px;
+	padding-left: 6px;
+	padding-bottom: 6px;
+}
+
+#right .floating-label {
+	position: absolute;
+	font-size: 14px;
+	pointer-events: none;
+	left: 6px;
+	bottom: 6px;
+	transition: 0.2s ease all;
+}
+
+#right input:focus ~ .floating-label,
+#right input:not(:focus):valid ~ .floating-label {
+	bottom: 27px;
+}
+
+#right #btn-login {
+	background-color: transparent;
+	border: 2px solid #9d0a1c;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+#right #btn-login a {
+	display: block;
+	padding: 2px 0;
+	color: #9d0a1c;
+	font-weight: bold;
+}
+
+#right #btn-login:hover {
+	transition: 0.3s;
+	background-color: #9d0a1c;
+}
+
+#right #btn-login a:hover {
+	transition: 0.3s;
+	color: #ffffff;
+}
+
+#right #btn-login:focus {
+	box-shadow: none;
+}
+
+#right .log-in {
+	color: #9d0a1c;
+	font-weight: bold;
+}
+
+#right nav ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#right nav ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+#right nav ul li a {
+	font-size: 12px;
+	color: #9d0a1c;
+	padding-left: 20px;
+}
+
+/*
+@media (max-width: 575px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #left {
+        padding: 25px 15px 25px;
+        overflow-y: auto;
+        height: 300px;
+    }
+    #left::-webkit-scrollbar {
+        display: none;
+    }
+    #left .item.first img {
+        margin-bottom: 30px;
+    }
+    #left .item.second img {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #left .item.third img {
+        margin-bottom: 45px;
+    }
+    #right {
+        margin: 0 15px 15px;
+        padding: 0 15px;
+        -webkit-box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+    }
+    #right h1.header {
+        font-weight: bold;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    #right #btn-login {
+        padding: 6px 0;
+        margin: 10px 0;
+        height: 30px;
+    }
+    #right #btn-login a {
+        line-height: 28px;
+    }
+    #right .mb-1 {
+        margin: 0!important;
+    }
+    #right nav ul {
+        text-align: center;
+        padding-top: 30px;
+    }
+    #right nav ul li {
+        text-align: center;
+    }
+    #right nav ul li a {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    #right nav ul li a img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #left {
+        padding: 25px 15px 25px;
+        overflow-y: auto;
+        height: 400px;
+    }
+    #left::-webkit-scrollbar {
+        display: none;
+    }
+    #left .item.first img {
+        margin-bottom: 30px;
+    }
+    #left .item.second img {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #left .item.third img {
+        margin-bottom: 45px;
+    }
+    #right {
+        margin: 0 15px 15px;
+        padding: 0 15px;
+        -webkit-box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+    }
+    #right h1.header {
+        font-weight: bold;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    #right #btn-login {
+        padding: 6px 0;
+        margin: 10px 0;
+        height: 30px;
+    }
+    #right #btn-login a {
+        line-height: 28px;
+    }
+    #right .mb-1 {
+        margin: 0!important;
+    }
+    #right nav ul {
+        text-align: center;
+        padding-top: 30px;
+    }
+    #right nav ul li {
+        text-align: center;
+    }
+    #right nav ul li a {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    #right nav ul li a img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #right {
+        padding: 30px 20px;
+    }
+    #right h1.header {
+        padding: 50px;
+    }
+    #right nav ul {
+        text-align: center;
+        padding-top: 50px;
+    }
+    #right nav ul li a {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 1200px) {}
+*/

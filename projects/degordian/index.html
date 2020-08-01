@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ivan Jovkovic" />
+    <meta name="description" content="Degordian | Strategic - creative digital agency" />
+    <meta name="keywords" content="frontend, developer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#24345c" />
+    <meta name="msapplication-navbutton-color" content="#24345c" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#24345c" />
+
+    <title>Degordian | Strategic - creative digital agency</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.2/ScrollToPlugin.min.js"></script>
+    <script src="dist/js/script.min.js" defer></script>
+</head>
+
+<body>
+    <!-- Top bar -->
+    <section class="top-bar">
+        <div class="top-bar-logo">
+            <img class="top-bar-logo__icon" src="static/svg/modules/header/logo.svg"
+                alt="static/svg/modules/header/logo.svg" />
+        </div>
+        <div class="top-bar-left-hamburger">
+            <h1>Click</h1>
+        </div>
+    </section>
+    <!-- Side menu -->
+    <section class="side-menu">
+        <!-- Side menu login and language -->
+        <section class="side-menu-login-language">
+            <div class="side-menu-login-language-login">
+                <button class="button side-menu-login-language-login__button">Log in
+                    <img class="side-menu-login-language-login__icon" src="static/svg/modules/header/login.svg"
+                        alt="static/svg/modules/header/login.svg" />
+                </button>
+            </div>
+            <div class="side-menu-login-language-language">
+                <button class="button side-menu-login-language-language__button">
+                    <img class="side-menu-login-language-language__icon" src="static/svg/modules/header/gb.svg"
+                        alt="static/svg/modules/header/gb.svg" />
+                    <img class="side-menu-login-language-language__icon" src="static/svg/modules/header/arrow-down.svg"
+                        alt="static/svg/modules/header/arrow-down.svg" />
+                </button>
+                <!-- <ul class="language-dropdown">
+                            <li class="language-dropdown__item">
+                                <a href="javascript:void(0)" class="language-dropdown__link">One</a>
+                            </li>
+                            <li class="language-dropdown__item">
+                                <a href="javascript:void(0)" class="language-dropdown__link">Two</a>
+                            </li>
+                            <li class="language-dropdown__item">
+                                <a href="javascript:void(0)" class="language-dropdown__link">Three</a>
+                            </li>
+                        </ul> -->
+            </div>
+        </section>
+        <!-- Side menu nav -->
+        <section class="nav side-menu-nav">
+            <li class="nav__item side-menu-nav__item">
+                <a href="javascript:void(0)" class="nav__link side-menu-nav__link">
+                    Why Novogradnja
+                </a>
+            </li>
+            <li class="nav__item side-menu-nav__item">
+                <a href="javascript:void(0)" class="nav__link side-menu-nav__link side-menu-nav__link--uppercase">
+                    Faq
+                </a>
+            </li>
+            <li class="nav__item side-menu-nav__item side-menu-nav__item--blog">
+                <a href="javascript:void(0)" class="nav__link side-menu-nav__link side-menu-nav__link--blog">
+                    Blog
+                </a>
+            </li>
+        </section>
+        <!-- Side menu property -->
+        <section class="property-div side-menu-property">
+            <input class="input property-div__input side-menu-property__input" type="text" />
+            <label class="label property-div__label side-menu-property__label" for="side-menu-property__input">List
+                your project</label>
+        </section>
+    </section>
+    <div class="ivan">
+
+        <!-- Header -->
+        <header class="header">
+            <!-- Header background -->
+            <section class="header-background">
+                <img class="image header-background__image" src="dist/img/modules/header/background.jpg"
+                    alt="dist/img/modules/header/background.jpg" />
+            </section>
+            <!-- Header top -->
+            <section class="header-top">
+                <div class="header-top-inner">
+                    <div class="header-top-wrapper">
+                        <div class="header-top-left">
+                            <div class="header-top-left-logo">
+                                <img class="header-top-left-logo__icon" src="static/svg/modules/header/logo.svg"
+                                    alt="static/svg/modules/header/logo.svg" />
+                            </div>
+                            <ul class="nav header-top-left-nav">
+                                <li class="nav__item header-top-left-nav__item">
+                                    <a href="javascript:void(0)" class="nav__link header-top-left-nav__link">
+                                        Why Novogradnja
+                                    </a>
+                                </li>
+                                <li class="nav__item header-top-left-nav__item">
+                                    <a href="javascript:void(0)"
+                                        class="nav__link header-top-left-nav__link header-top-left-nav__link--uppercase">
+                                        Faq
+                                    </a>
+                                </li>
+                                <li class="nav__item header-top-left-nav__item header-top-left-nav__item--blog">
+                                    <a href="javascript:void(0)"
+                                        class="nav__link header-top-left-nav__link header-top-left-nav__link--blog">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-top-center">
+                            <div class="property-div header-top-center-property">
+                                <input class="input property-div__input header-top-center-property__input"
+                                    type="text" />
+                                <label class="label property-div__label header-top-center-property__label"
+                                    for="header-top-center-property-div__input">List
+                                    your project</label>
+                            </div>
+                        </div>
+                        <div class="header-top-right">
+                            <div class="header-top-right-login">
+                                <button class="button header-top-right-login__button">Log in
+                                    <img class="header-top-login__icon" src="static/svg/modules/header/login.svg"
+                                        alt="static/svg/modules/header/login.svg" />
+                                </button>
+                            </div>
+                            <div class="header-top-right-language">
+                                <button class="button header-top-right-language__button">
+                                    <img class="header-top-right-language__icon" src="static/svg/modules/header/gb.svg"
+                                        alt="static/svg/modules/header/gb.svg" />
+                                    <img class="header-top-right-language__icon"
+                                        src="static/svg/modules/header/arrow-down.svg"
+                                        alt="static/svg/modules/header/arrow-down.svg" />
+                                </button>
+                                <!-- <ul class="language-dropdown">
+                                <li class="language-dropdown__item">
+                                    <a href="javascript:void(0)" class="language-dropdown__link">One</a>
+                                </li>
+                                <li class="language-dropdown__item">
+                                    <a href="javascript:void(0)" class="language-dropdown__link">Two</a>
+                                </li>
+                                <li class="language-dropdown__item">
+                                    <a href="javascript:void(0)" class="language-dropdown__link">Three</a>
+                                </li>
+                            </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Header center -->
+            <section class="header-center">
+                <div class="header-center-inner">
+                    <h1 class="heading header-center-inner__heading">
+                        Explore beauties of Montenegro – Bay of Kotor
+                    </h1>
+                    <div class="search">
+                        <div class="search-div">
+                            <input class="input search-div__input-location" type="text" />
+                            <label class="label search-div__input-location__label"
+                                for="footer-top-wrapper-property__input">Location or Project name</label>
+                            <img class="search-div__icon-location" src="static/svg/modules/header/location.svg"
+                                alt="static/svg/modules/header/location.svg" />
+                        </div>
+                        <div class="search-div">
+                            <button class="button search-div__button-property" type="text">Type of property</button>
+                            <img class="search-div__icon-property" src="static/svg/modules/header/arrow-down-blue.svg"
+                                alt="static/svg/modules/header/property.svg" />
+                            <div class="dropdown">
+                                <ul>
+                                    <li>a</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-div">
+                            <button class="button search-div__button" type="text">
+                                <p class="search-div__button-name">Search</p>
+                            </button>
+                            <img class="search-div__icon-search" src="static/svg/modules/header/search.svg"
+                                alt="static/svg/modules/header/search.svg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Header bottom -->
+            <section class="header-bottom">
+                <div class="header-bottom-inner">
+                    <div class="header-bottom-wrapper">
+                        <ul class="nav slider-indicators">
+                            <li class="nav__item slider-indicators__item slider-indicators__item--active"></li>
+                            <li class="nav__item slider-indicators__item"></li>
+                            <li class="nav__item slider-indicators__item"></li>
+                        </ul>
+                        <div class="rectangle header-bottom-rectangle-md">
+                            <p class="rectangle__paragraph-resolution header-bottom-rectangle__paragraph-resolution">
+                                <span class="rectangle__paragraph-resolution--uppercase">Desktop</span> 728 x 90
+                            </p>
+                        </div>
+                        <div class="rectangle header-bottom-rectangle-sm">
+                            <p class="rectangle__paragraph-resolution header-bottom-rectangle__paragraph-resolution">
+                                <span class="rectangle__paragraph-resolution--uppercase">Mobile</span> 300 x 90
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Header bottom -->
+            <!-- <section class="header-slider-controllers">
+            <div class="header-slider-controllers-inner">
+                <img class="header-slider-controllers-prev" src="static/svg/modules/header/arrow-prev.svg"
+                    alt="static/svg/modules/header/arrow-prev.svg" />
+                <img class="header-slider-controllers-next" src="static/svg/modules/header/arrow-next.svg"
+                    alt="static/svg/modules/header/arrow-next.svg" />
+            </div>
+        </section> -->
+        </header>
+        <!-- More-about -->
+        <section class="more-about">
+            <div class="more-about__background">
+                <img class="image more-about__image" src="dist/img/modules/more-about/background.jpg"
+                    alt="dist/img/modules/more-about/background.jpg" />
+            </div>
+            <div class="more-about-inner">
+                <h1 class="heading more-about__heading">
+                    Novogradnja<br />
+                    Secure. Innovative. International.
+                </h1>
+                <p class="paragraph more-about__paragraph">
+                    You are developing a Building, a Resort, a Condo Hotel Whatever the type of properties are included
+                    in your development Located in Croatia, in Montenegro, in Serbia It Has Its Place Here! You are
+                    developing a Building, a Resort, a Condo Hotel Whatever the type of properties are included in your
+                    development Located in Croatia, in Montenegro, in Serbia It Has Its Place Here!
+                </p>
+                <button class="button more-about__button">More about Novogradnja</button>
+            </div>
+        </section>
+        <!-- Property -->
+        <section class="property">
+            <div class="property-inner">
+                <div class="property-wrapper">
+                    <div class="rectangle property-rectangle-md">
+                        <p class="rectangle__paragraph-resolution property-rectangle__paragraph-resolution">
+                            <span class="rectangle__paragraph-resolution--uppercase">Desktop</span> 970 x 250
+                        </p>
+                    </div>
+                    <div class="rectangle property-rectangle-sm">
+                        <p class="rectangle__paragraph-resolution property-rectangle__paragraph-resolution">
+                            <span class="rectangle__paragraph-resolution--uppercase">Mobile</span> 300 x 250
+                        </p>
+                    </div>
+                    <div class="property-column">
+                        <div class="property-column-left">
+                            <h1 class="heading property-column-left__heading">
+                                Have a property that you would like to advertise?
+                            </h1>
+                            <p class="paragraph property-column-left__paragraph property-column-left__paragraph-first">
+                                We have a quick and easy solution for you.
+                            </p>
+                            <p class="paragraph property-column-left__paragraph property-column-left__paragraph-second">
+                                You are developing a Building, a Resort, a Condo Hotel Whatever the type of properties
+                                are
+                                included
+                                in
+                                your development Located in Croatia, in Montenegro, in Serbia It Has Its Place Here!
+                            </p>
+                            <div class="property-column-left-button">
+                                <button class="button property-column-left-button__button">List your property <span
+                                        class="property-column-left-button__button--uppercase">now!
+                                </button>
+                            </div>
+                        </div>
+                        <div class="property-column-right">
+                            <img class="image property-column-right__image" src="dist/img/modules/property/laptop.jpg"
+                                alt="dist/img/modules/property/laptop.jp" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <!-- Footer top -->
+                <section class="footer-top">
+                    <div class="footer-top-wrapper">
+                        <ul class="nav footer-top-wrapper-nav">
+                            <li class="nav__item footer-top-wrapper-nav__item">
+                                <a href="javascript:void(0)" class="nav__link footer-top-wrapper-nav__link">
+                                    Why Novogradnja
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav__item">
+                                <a href="javascript:void(0)" class="nav__link footer-top-wrapper-nav__link">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav__item">
+                                <a href="javascript:void(0)" class="nav__link footer-top-wrapper-nav__link">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav footer-top-wrapper-nav">
+                            <li class="nav__item footer-top-wrapper-nav__item">
+                                <a href="javascript:void(0)" class="nav__link footer-top-wrapper-nav__link">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav__item">
+                                <a href="javascript:void(0)"
+                                    class="nav__link footer-top-wrapper-nav__link footer-top-wrapper-nav__link--uppercase">
+                                    Faq
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav footer-top-wrapper-nav">
+                            <li class="nav__item footer-top-wrapper-nav__item footer-top-wrapper-nav__item--mb-4">
+                                <a href="javascript:void(0)"
+                                    class="nav__link footer-top-wrapper-nav__link footer-top-wrapper-nav__link--bold">
+                                    Montenegro Novogradnja
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav__item footer-top-wrapper-nav__item--mb-12">
+                                <a href="javascript:void(0)"
+                                    class="nav__link footer-top-wrapper-nav__link footer-top-wrapper-nav__link-street">
+                                    <img class="footer-top-wrapper-nav__icon"
+                                        src="static/svg/modules/footer/location.svg"
+                                        alt="static/svg/modules/header/logo.svg" />
+                                    Njegoseva 10, Tivat
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav__item footer-top-wrapper-nav__item--mb-0">
+                                <a href="javascript:void(0)"
+                                    class="nav__link footer-top-wrapper-nav__link footer-top-wrapper-nav__link-work">
+                                    Mon - Fri: 10:00 – 18:00
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav__item">
+                                <a href="javascript:void(0)"
+                                    class="nav__link footer-top-wrapper-nav__link footer-top-wrapper-nav__link-work">
+                                    Sat: 10:00 – 16:00
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav footer-top-wrapper-nav footer-top-wrapper-nav-property">
+                            <li class="nav__item footer-top-wrapper-nav__item footer-top-wrapper-nav-property__item">
+                                <a href="javascript:void(0)"
+                                    class="nav__link footer-top-wrapper-nav__link footer-top-wrapper-nav-property__link">
+                                    Have a property that you would like to advertise?
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav__item footer-top-wrapper-nav__item">
+                                <div class="property footer-top-wrapper-property">
+                                    <input class="input property-div__input footer-top-wrapper-property__input"
+                                        type="text" />
+                                    <label class="label property-div__label footer-top-wrapper-property__label"
+                                        for="footer-top-wrapper-property__input">List your project</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav footer-top-wrapper-nav footer-top-wrapper-nav-social">
+                            <li class="nav__item footer-top-wrapper-nav-social__item">
+                                <a href="javascript:void(0)" class="nav__link footer-top-wrapper-nav-social__link">
+                                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="9" height="16"
+                                        viewBox="0 0 9 16">
+                                        <g>
+                                            <g>
+                                                <path class="fill" fill="#fff"
+                                                    d="M6.045 5.827h2.213L7.972 8.2H6.045a.321.321 0 0 0-.328.314v6.726H2.924V8.483a.321.321 0 0 0-.328-.314H.936V5.827h1.747c.18 0 .328-.14.328-.314V3.67a.302.302 0 0 0-.005-.054c-.035-.19-.158-1.18.802-2.026.898-.79 2.04-.852 2.37-.852a1.754 1.754 0 0 1 .094.002h1.995v2.167H6.84c-.703 0-1.123.385-1.123 1.03v1.576c0 .173.147.314.328.314zm.795-2.292h1.5c.322 0 .583-.25.583-.558V.67A.572.572 0 0 0 8.34.112H6.28L6.177.11c-.388 0-1.74.073-2.813 1.018-1.17 1.03-1.059 2.264-1.01 2.568v1.503H.865a.572.572 0 0 0-.584.558v2.482c0 .307.262.558.583.558h1.405v6.514c0 .307.262.558.583.558H5.79c.322 0 .583-.25.583-.558V8.829h1.665a.574.574 0 0 0 .579-.494l.302-2.514a.543.543 0 0 0-.144-.435.596.596 0 0 0-.435-.187H6.373V3.937c0-.26.074-.402.467-.402z" />
+                                            </g>
+                                            <g>
+                                                <path class="fill" fill="#fff"
+                                                    d="M3.588 10.68a.321.321 0 0 0-.328.314v.157c0 .173.147.314.328.314.181 0 .328-.14.328-.314v-.157a.321.321 0 0 0-.328-.314z" />
+                                            </g>
+                                            <g>
+                                                <path class="fill" fill="#fff"
+                                                    d="M3.588 11.85a.321.321 0 0 0-.328.314v2.386c0 .173.147.314.328.314.181 0 .328-.14.328-.314v-2.386a.321.321 0 0 0-.328-.314z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav-social__item">
+                                <a href="javascript:void(0)" class="nav__link footer-top-wrapper-nav-social__link">
+                                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 16 16">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <g>
+                                                        <path class="fill" fill="#fff"
+                                                            d="M15.25 11.21a4.064 4.064 0 0 1-4.059 4.06H4.819a4.064 4.064 0 0 1-4.06-4.06V4.8A4.064 4.064 0 0 1 4.82.739h6.372a4.064 4.064 0 0 1 4.06 4.06zM11.192.11H4.819A4.694 4.694 0 0 0 .13 4.799v6.411a4.694 4.694 0 0 0 4.689 4.69h6.372a4.694 4.694 0 0 0 4.689-4.69V4.8A4.694 4.694 0 0 0 11.191.11z" />
+                                                    </g>
+                                                    <g>
+                                                        <path class="fill" fill="#fff"
+                                                            d="M13.446 11.195a2.264 2.264 0 0 1-2.263 2.26H4.811a2.264 2.264 0 0 1-2.262-2.26V4.789a2.264 2.264 0 0 1 2.262-2.26h6.372a2.264 2.264 0 0 1 2.263 2.26zM11.183 1.9H4.811A2.895 2.895 0 0 0 1.92 4.791v6.412a2.895 2.895 0 0 0 2.891 2.891h6.372a2.895 2.895 0 0 0 2.892-2.891V4.79A2.895 2.895 0 0 0 11.183 1.9z" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path class="fill" fill="#fff"
+                                                            d="M7.995 11.431A3.44 3.44 0 0 1 4.56 7.995 3.44 3.44 0 0 1 7.995 4.56a3.44 3.44 0 0 1 3.436 3.436 3.44 3.44 0 0 1-3.436 3.436zm0-7.501A4.07 4.07 0 0 0 3.93 7.995a4.07 4.07 0 0 0 4.065 4.065 4.07 4.07 0 0 0 4.065-4.065A4.07 4.07 0 0 0 7.995 3.93z" />
+                                                    </g>
+                                                    <g>
+                                                        <path class="fill" fill="#fff"
+                                                            d="M7.997 9.674a1.68 1.68 0 0 1-1.678-1.677 1.68 1.68 0 0 1 1.678-1.678 1.68 1.68 0 0 1 1.677 1.678 1.68 1.68 0 0 1-1.677 1.677zm.005-3.984A2.314 2.314 0 0 0 5.69 8.002a2.314 2.314 0 0 0 2.312 2.311 2.314 2.314 0 0 0 2.311-2.311A2.314 2.314 0 0 0 8.002 5.69z" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <path class="fill" fill="#fff"
+                                                        d="M11.832 4.494a.343.343 0 1 1 0-.686.343.343 0 0 1 0 .686zm.005-1.314a.978.978 0 0 0 0 1.953.978.978 0 0 0 0-1.953z" />
+                                                </g>
+                                                <g>
+                                                    <path class="fill" fill="#fff"
+                                                        d="M7.501 14.38H4.545a.315.315 0 1 0 0 .629H7.5a.315.315 0 1 0 0-.629z" />
+                                                </g>
+                                                <g>
+                                                    <path class="fill" fill="#fff"
+                                                        d="M8.693 14.38h-.188a.315.315 0 0 0 0 .629h.188a.315.315 0 1 0 0-.629z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav-social__item">
+                                <a href="javascript:void(0)" class="nav__link footer-top-wrapper-nav-social__link">
+                                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                                        viewBox="0 0 16 14">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path class="fill" fill="#50e3b3"
+                                                        d="M13.777 4.175a.298.298 0 0 0-.096.24c.02.286.38 7.037-6.775 8.735-.032.007-2.877.6-5.342-.622 1.042-.03 2.536-.302 3.576-1.472a.298.298 0 0 0-.222-.497h-.003c-.015.01-1.58-.001-2.296-1.491.289.016.645-.002.928-.132a.299.299 0 0 0-.064-.563c-.08-.017-1.821-.407-2.065-2.309.264.116.602.21.937.16a.298.298 0 0 0 .15-.521c-.074-.065-1.71-1.52-.934-3.397.842.884 3.335 3.182 6.356 3.009a.299.299 0 0 0 .272-.37 2.875 2.875 0 0 1-.086-.699c0-1.544 1.235-2.8 2.752-2.8.742 0 1.438.297 1.96.836.055.057.13.089.209.09.315.005.834-.032 1.42-.268a4.8 4.8 0 0 1-.782.751.298.298 0 0 0 .207.532c.07-.005.424-.037.824-.123-.219.235-.518.535-.926.911zm1.947-1.8a.298.298 0 0 0-.347.01c-.133.1-.35.181-.585.243.61-.684.623-1.14.616-1.246a.298.298 0 0 0-.472-.222c-.686.5-1.37.604-1.776.615A3.295 3.295 0 0 0 10.864.85c-1.846 0-3.347 1.523-3.347 3.396 0 .16.01.322.033.48-3.199-.035-5.797-3.104-5.823-3.136a.298.298 0 0 0-.487.043C.32 3.23.935 4.635 1.498 5.439a1.97 1.97 0 0 1-.228-.14.297.297 0 0 0-.476.234C.769 7.056 1.5 7.929 2.19 8.41a.298.298 0 0 0-.315.384c.476 1.56 1.644 2.089 2.388 2.269-1.529 1.19-3.778.807-3.803.803a.298.298 0 0 0-.233.53c1.613 1.233 3.543 1.506 4.937 1.506a9.507 9.507 0 0 0 1.874-.172c7.06-1.675 7.258-8.149 7.242-9.21 1.325-1.233 1.532-1.703 1.564-1.82a.297.297 0 0 0-.12-.326z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav__item footer-top-wrapper-nav-social__item">
+                                <a href="javascript:void(0)" class="nav__link footer-top-wrapper-nav-social__link">
+                                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 16 16">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path class="fill" fill="#fff"
+                                                        d="M3.883 15.246H.979V5.61h2.904zm.07-10.266H.909a.56.56 0 0 0-.559.559v9.777c0 .309.25.56.559.56h3.044a.56.56 0 0 0 .559-.56V5.54a.56.56 0 0 0-.56-.559z" />
+                                                </g>
+                                                <g>
+                                                    <path class="fill" fill="#fff"
+                                                        d="M2.428 4.133a1.693 1.693 0 0 1 0-3.384c.45 0 .873.176 1.192.496a1.692 1.692 0 0 1-1.192 2.888zM4.074.8A2.306 2.306 0 0 0 2.433.12 2.324 2.324 0 0 0 .11 2.44a2.325 2.325 0 0 0 2.323 2.322 2.324 2.324 0 0 0 2.321-2.321c0-.62-.242-1.202-.68-1.64z" />
+                                                </g>
+                                                <g>
+                                                    <path class="fill" fill="#fff"
+                                                        d="M12.37 15.25v-4.684c0-.637-.018-1.301-.229-1.797-.245-.575-.723-.867-1.421-.867-1.67 0-1.894 1.304-1.894 2.58v4.767H5.929V5.612h2.775v.565a.315.315 0 0 0 .546.213c.35-.381 1.132-1.02 2.442-1.02 3.143 0 3.576 2.204 3.576 4.586v5.294zm2.824-8.813C14.53 5.31 13.352 4.74 11.692 4.74c-1.069 0-1.846.365-2.363.741a.56.56 0 0 0-.555-.498H5.859a.56.56 0 0 0-.559.559v9.777c0 .309.25.56.559.56h3.037a.56.56 0 0 0 .559-.56v-4.837c0-1.64.444-1.95 1.265-1.95.801 0 1.02.437 1.02 2.034v4.754c0 .308.252.559.56.559h3.038a.56.56 0 0 0 .559-.56V9.957c0-1.083-.08-2.462-.703-3.52z" />
+                                                </g>
+                                                <g>
+                                                    <path class="fill" fill="#fff"
+                                                        d="M1.615 11.33a.315.315 0 0 0-.315.315v2.925a.315.315 0 1 0 .63 0v-2.925a.315.315 0 0 0-.315-.315z" />
+                                                </g>
+                                                <g>
+                                                    <path class="fill" fill="#fff"
+                                                        d="M1.615 10.01a.315.315 0 0 0-.315.315v.283a.315.315 0 1 0 .63 0v-.283a.315.315 0 0 0-.315-.315z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Footer bottom -->
+                <section class="footer-bottom">
+                    <div class="footer-bottom-wrapper">
+                        <div class="footer-bottom-left">
+                            <ul class="nav footer-bottom-left-nav">
+                                <li class="nav__item footer-bottom-left-nav__item">
+                                    <a href="javascript:vodi(0)" class="nav__link footer-bottom-left-nav__link">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="nav__item footer-bottom-left-nav__item">
+                                    <a href="javascript:vodi(0)" class="nav__link footer-bottom-left-nav__link">
+                                        General Terms and Conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom-right">
+                            <p class="paragraph footer-bottom-right__all-right">All right reserved Novogradnja</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <!-- JS -->
+
+    </div>
+    <script src="js/vendor/jquery.min.js"></script>
+</body>
+
+</html>

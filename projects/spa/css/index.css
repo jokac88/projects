@@ -1,0 +1,240 @@
+body.loading {
+	background: #e6e6e6 url('../img/loading.gif') center no-repeat;
+	background-attachment: cover;
+	background-size: 50px;
+	-webkit-transition: background-color 0;
+	transition: background-color 0;
+	opacity: 0;
+	-webkit-transition: opacity 0;
+	transition: opacity 0;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 9.5%;
+	right: 9.5%;
+	z-index: 9999;
+}
+
+#services {
+	position: absolute;
+	bottom: 0;
+	left: 9.5%;
+	right: 9.5%;
+	z-index: 9999;
+}
+
+#services .wrap {
+	padding: 20px;
+	background: rgba(50, 25, 50, 0.5);
+}
+
+#services .item-thumb {
+	margin-bottom: 10px;
+	overflow: hidden;
+	line-height: 0;
+}
+
+#services .item-thumb a {
+	position: relative;
+	display: block;
+}
+
+#services .item-thumb img {
+	width: 100%;
+	height: 170px;
+}
+
+#services .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: all 0.2s ease;
+}
+
+#services .item a:hover .overlay,
+#services .item h4:hover .overlay {
+	opacity: 1;
+}
+
+#services .item a > h4 {
+	position: absolute;
+	width: 100%;
+	margin: 0 0 -15px 0;
+	text-align: center;
+	z-index: 10;
+	bottom: 0;
+	color: #ffffff;
+	opacity: 0;
+	transition: all 0.2s ease;
+}
+
+#services .item:hover a > h4 {
+	bottom: 50%;
+	opacity: 1;
+	z-index: 10;
+}
+
+#services .item h4 {
+	letter-spacing: -0.04em;
+	transition: all 0.2s ease;
+	color: #ffffff;
+}
+
+#services .item:hover > h4 {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.d-block {
+	height: 100vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	font-size: 6em;
+	color: #501932;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+	opacity: 0.8;
+	color: #501932;
+}
+
+.fa-chevron-left {
+	position: absolute;
+	left: 15%;
+}
+
+.fa-chevron-right {
+	position: absolute;
+	right: 15%;
+}
+
+.carousel-indicators li {
+	cursor: pointer;
+	border-radius: 8px;
+	padding: 3px 0;
+	margin: 0 5px;
+	background-color: #C0C0C0;
+}
+
+.carousel-indicators li:hover {
+	opacity: 0.7;
+}
+
+.carousel-indicators li.active {
+	background-color: #501932;
+}
+
+/* Media queries */
+
+/*----------------------------
+	@media only screen and (max-width: 319px) start
+----------------------------*/
+
+@media only screen and (max-width: 319px) {}
+
+/*----------------------------
+	@media only screen and (max-width: 319px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	header {
+		left: 15px;
+		right: 15px;
+	}
+
+	#services {
+		position: static;
+		background-color: #501932; 
+	}
+
+	#services .col-md-4 {
+		margin-bottom: 25px;
+	}
+
+	#services .col-md-4:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+	#services .item-thumb img {
+		height: 250px;
+	}
+}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) end
+----------------------------*/

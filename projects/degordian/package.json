@@ -1,0 +1,43 @@
+{
+  "name": "degordian",
+  "version": "1.0.0",
+  "description": "website for real estate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokac88/degordian.git"
+  },
+  "author": "ivan jovkovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jokac88/degordian/issues"
+  },
+  "homepage": "https://github.com/jokac88/degordian#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dest-clean": "^0.5.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "gsap": "^3.2.0",
+    "jquery": "^3.4.1"
+  }
+}

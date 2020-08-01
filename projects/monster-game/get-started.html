@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- <div id="app">
+        <input type="text" v-on:input="changeTitle" />
+        <p v-once>{{ title }}</p>
+        <p>{{ helloWorld() }}</p>
+        <a :href="link" target="_blank">Facebook</a>
+        <hr />
+        <p v-html="finishedLink"></p>
+    </div> -->
+    <!-- <div id="app">
+        <button @click="increase(5, $event)">Click me!</button>
+        <button @click="counter++">Click me!</button>
+        <input v-on:input="changeText" type="text" />
+        <p>{{ counter * 2 > 10 ? 'Greater than 10' : 'Smaller than 10'}}</p>
+        <p>{{ message }}</p>
+        <p v-html="htmlDiv"></p>
+        <a :href="link" target="_blank">Link</a>
+        <p>Coordinates: {{ x }} / {{ y }}</p>
+        <div class="mouseMove" @mousemove="updateCoordinates">
+            <span class="stop" @mousemove.stop="" @click="dummy">Modifier</span>
+        </div>
+        <input type="text" @keyup.enter="alertMe" @input="alert" />
+    </div> -->
+    <!-- <div id="app">
+      <h1 v-once>{{ title }}</h1>
+      <p>
+        {{ sayHello() }}
+        <a :href="ivan">
+          Ivan
+        </a>
+        <input type="text" class="type" v-model="ivan" />
+      </p>
+      <p v-html="finishedLink">Google</p>
+    </div> -->
+    <!-- <div id="app">
+        <button @click="increase(2, $event)">
+            Click me
+        </button>
+        <button @click="counter++">
+            Click me
+        </button>
+        <p>
+            {{ counter * 2 > 10 ? "Vece od 10" : "Manje od 10" }}
+        </p>
+        <p @mousemove="updateCoordinates" class="jeca">
+            Coordinates: {{ x }} / {{ y }}
+            <span @mousemove.stop.prevent="">DEAD SPOT</span>
+        </p>
+        <input type="text" @keyup.enter.space="alertMe" />
+    </div> -->
+    <!-- <div id="app">
+        <input type="text" v-model="name" />
+        <p>{{ name }}</p>
+        <button @click="counter++">Increase</button>
+        <button @click="counter--">Decrease</button>
+        <button @click="secondCounter++">Increase Second</button>
+        <p>{{ counter }} | {{ secondCounter }}</p>
+        <p>{{ result() }} | {{ output }}</p>
+    </div> -->
+    <div id="app">
+        <!-- <div class="container">
+            <div class="demo" @click="attachRed = !attachRed" :class="{red: attachRed, 'blue-div': !attachRed}">red
+            </div>
+            <div class="demo" @click="attachRed = !attachRed" :class="divClasses">red</div>
+            <div class="demo" @click="attachBlue = !attachBlue" :class="{'blue-div': attachBlue}">blue</div>
+            <div class="demo" @click="attachGreen = !attachGreen" :style="[myStyle, {height: width + 'px'}]">green</div>
+        </div>
+        <input type="text" v-model="color" />
+        <input type="number" min="0" v-model="width" />
+        <select v-model="color">
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+        </select> -->
+        <!-- <p v-if="show">You can see me!</p>
+        <p v-else>Now you can see me!</p>
+        <p>Do you also see me?</p>
+        <template v-if="show">
+            <h1>Heading</h1>
+            <p>Inside a template</p>
+        </template>
+        <button @click="show = !show">Switch</button> -->
+        <!-- <ul>
+            <li v-for="ingredient in ingredients">{{ ingredient }}</li>
+            <li v-for="(person, i) in persons">{{ person.name }}
+                (<span :style="color">{{i}}</span>)
+            </li>
+        </ul> -->
+        <ul>
+            <li v-for="person in persons">
+                <div v-for="(value, key, index) in person">{{ key }}: {{ value }} ({{ index }})</div>
+            </li>
+        </ul>
+        <span v-for="n in 10">{{ n }}</span>
+        <ul>
+            <li v-for="(ingredient, index) in ingredients" :key="ingredient" :style="color">
+                {{ ingredient }} ({{ index }})
+            </li>
+        </ul>
+        <button @click="ingredients.push('spices')">Add New</button>
+    </div>
+    <script type=" text/javascript" src="js/vue.js">
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

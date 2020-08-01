@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+html,
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+/*
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #713949;
+}
+
+::-webkit-scrollbar-track {
+	background: #FFFFFF;
+}
+*/
+
+/*----------------------------
+    App start
+----------------------------*/
+
+#app {
+	min-height: 100%;
+}
+
+/*----------------------------
+    App end
+----------------------------*/
+
+header .navbar {
+	padding: 5px 15px;
+	background: rgba(50, 25, 50, 0.2);
+	transition: all .5s ease;
+}
+
+header .navbar:hover {
+	padding: 5px 15px;
+	background: rgba(50, 25, 50, 1);
+}
+
+header .navbar-brand {
+	color: #ffffff;
+}
+
+header .navbar-brand:hover {
+	opacity: 0.7;
+}
+
+header .navbar-toggler-icon {
+	background: url("../img/menu.png") center center no-repeat;
+	background-size: 85% 85%;
+}
+
+header .nav-item a {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	color: #ffffff;
+	padding: 0;
+	margin: 15px;
+}
+
+header .nav-item a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	margin-top: 5px;
+	background: #ffffff;
+	transition: width .3s;
+}
+
+header .nav-item:not(.active) a:hover::after {
+	width: 100%;
+	transition: width .3s;
+}
+
+header .nav-item.active a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: #ffffff;
+}
+
+header .dropdown-menu {
+	margin: 0;
+	padding: 0;
+	background: #f2f2f2;
+	z-index: 9999;
+	min-width: 120px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+header .arrow {
+	font-size: 10px;
+}
+
+header .dropdown-menu a {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #501932 !important;
+}
+
+header .nav-link.dropdown-toggle::after {
+	border: none;
+	margin: 0;
+	margin-top: 5px;
+}
+
+header .dropdown:hover > .dropdown-menu {
+	display: block;
+}
+
+header .dropdown-item {
+	font-size: 14px !important;
+}
+
+header .dropdown-item:hover {
+	opacity: 0.7;
+}
+
+header .dropdown-item::after {
+	height: 0 !important;
+}
+
+header .dropdown-item:hover,
+header .dropdown-item:active,
+header .dropdown-item:focus,
+header .dropdown-item:visited {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+footer {
+	border-top: 2px solid #ffffff;
+	text-align: center;
+}
+
+footer .social ul {
+	margin: 0;
+	padding: 10px 0;
+	display: block;
+}
+
+footer .social ul li {
+	list-style: none;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 5px 10px;
+}
+
+footer .navbar {
+	padding: 5px 15px;
+	background: rgba(50, 25, 50, 0.2);
+	transition: all .5s ease;
+}
+
+footer .navbar:hover {
+	padding: 5px 15px;
+	background: rgba(50, 25, 50, 1);
+}
+
+footer .navbar-brand {
+	color: #ffffff;
+}
+
+footer .navbar-brand:hover {
+	opacity: 0.7;
+}
+
+footer .all-rights {
+	color: #ffffff;
+	padding: 20px 0;
+}
+
+footer .nav-item a {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	color: #ffffff;
+	padding: 0;
+	margin: 15px;
+}
+
+footer .nav-item a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	margin-top: 5px;
+	background: #ffffff;
+	transition: width .3s;
+}
+
+footer .nav-item:not(.active) a:hover::after {
+	width: 100%;
+	transition: width .3s;
+}
+
+footer .nav-item.active a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: #ffffff;
+}
+
+footer .dropdown-menu {
+	margin: 0;
+	padding: 0;
+	background: #f2f2f2;
+	z-index: 9999;
+	min-width: 120px;
+	left: 50%;
+	top: -100px;
+	transform: translate(-50%, -0%);
+}
+
+footer .arrow {
+	font-size: 10px;
+}
+
+footer .dropdown-menu a {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #501932 !important;
+}
+
+footer .nav-link.dropdown-toggle::after {
+	border: none;
+	margin: 0;
+	margin-top: 5px;
+}
+
+footer .dropdown:hover > .dropdown-menu {
+	display: block;
+}
+
+footer .dropdown-item {
+	font-size: 14px !important;
+}
+
+footer .dropdown-item:hover {
+	opacity: 0.7;
+}
+
+footer .dropdown-item::after {
+	height: 0 !important;
+}
+
+footer .dropdown-item:hover,
+footer .dropdown-item:active,
+footer .dropdown-item:focus,
+footer .dropdown-item:visited {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+#back-to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 35px;
+	height: 35px;
+	z-index: 9999;
+	cursor: pointer;
+	transition: all .3s ease-out;
+	background: url("../img/back-to-top.png") center no-repeat;
+	background-size: 20px;
+	background-color: #ffffff;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.show {
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+#back-to-top:hover {
+	background-color: #e6e6e6;
+}
+
+/* Media queries */
+
+/*----------------------------
+	@media only screen and (max-width: 319px) start
+----------------------------*/
+
+@media only screen and (max-width: 319px) {}
+
+/*----------------------------
+	@media only screen and (max-width: 319px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	header .nav-link {
+		margin: 5px !important;
+	}
+
+	header .navbar-brand {
+		padding-bottom: 4px;
+	}
+
+	header .navbar-toggler {
+		padding: 0;
+	}
+
+	header .dropdown-menu {
+		left: auto;
+		transform: translate(-0%, -0%);
+		min-width: auto;
+	}
+
+	footer .navbar.navbar-expand-md {
+		display: none;
+	}
+
+	footer .all-rights {
+		padding-top: 0;
+		font-size: 12px;
+	}
+}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+	header .nav-link {
+		margin: 5px !important;
+	}
+
+	footer .nav-link {
+		margin: 5px !important;
+	}
+
+	footer .all-rights {
+		font-size: 16px;
+	}
+}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) end
+----------------------------*/

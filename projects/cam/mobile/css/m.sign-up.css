@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #9d0a1c;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-width: 280px;
+    height: 100%;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+hr {
+    margin-top: 2px;
+}
+
+button:focus,
+input:focus {
+    box-shadow: none!important;
+    outline: none!important;
+}
+
+.row {
+    margin: 0;
+}
+
+.col {
+    width: 100%;
+}
+
+.clr {
+    clear: both;
+}
+
+#top {
+    padding: 10px 0;
+    overflow-y: auto;
+    height: 40vh;
+}
+
+#top::-webkit-scrollbar {
+    display: none;
+}
+
+#top .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#top .item img {
+    -webkit-box-shadow: 0px 15px 35px -20px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 15px 35px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 15px 35px -20px rgba(0, 0, 0, 0.75);
+}
+
+#top .first img {
+    margin-bottom: 30px;
+}
+
+#top .second img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#top .third img {
+    margin-bottom: 45px;
+}
+
+#top .item.first img:last-child,
+#top .item.second img:last-child,
+#top .item.third img:last-child {
+    margin-bottom: 0;
+}
+
+#bottom {
+    padding: 0 30px 10px;
+    -webkit-box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -10px 25px -10px rgba(0, 0, 0, 0.75);
+}
+
+#bottom h1.header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#bottom h1.header a {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 22px;
+    color: #9d0a1c;
+}
+
+#bottom form {
+    height: 40vh;
+}
+
+#bottom .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#bottom .form-control {
+    border-bottom: 2px solid #9d0a1c!important;
+    color: #9d0a1c;
+    font-size: 14px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+}
+
+#bottom .floating-label {
+    position: absolute;
+    font-size: 14px;
+    pointer-events: none;
+    left: 6px;
+    bottom: 6px;
+    transition: 0.2s ease all;
+}
+
+#bottom input:focus ~ .floating-label,
+#bottom input:not(:focus):valid ~ .floating-label {
+    bottom: 27px;
+}
+
+#bottom #btn-sign-up {
+    background-color: transparent;
+    border: 2px solid #9d0a1c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#bottom #btn-sign-up a {
+    display: block;
+    padding: 4px 0 2px;
+    color: #9d0a1c;
+    font-weight: bold;
+}
+
+#bottom #btn-sign-up:hover {
+    transition: 0.3s;
+    background-color: #9d0a1c;
+}
+
+#bottom #btn-sign-up a:hover {
+    transition: 0.3s;
+    color: #ffffff;
+}
+
+#bottom #btn-sign-up:focus {
+    box-shadow: none;
+}
+
+#bottom .log-in {
+    color: #9d0a1c;
+    font-weight: bold;
+}
+
+#bottom .form-check {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#bottom .form-check-label input {
+    display: none;
+    position: relative;
+    z-index: -9999;
+}
+
+#bottom .form-check-label span {
+    position: absolute;
+    top: 13%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url('../img/check%20box%202.png') center center no-repeat;
+}
+
+#bottom .form-check-label input:checked + span {
+    background: url('../img/check%20box%201.png') center center no-repeat;
+}
+
+#botttom .navbar-footer {
+    height: 5vh;
+}
+
+#bottom nav ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#bottom nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+#bottom nav ul li a {
+    font-size: 12px;
+    color: #9d0a1c;
+    padding-left: 20px;
+}
+
+@media (max-width: 576px) {
+    #top {
+        height: 30vh;
+    }
+    #bottom form {
+        height: 48vh;
+    }
+    #bottom .account {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .form-check-inline .form-check-label {
+        font-size: 12px;
+    }
+    #bottom .form-check-label span {
+        top: 20%;
+        background-size: 14px 14px;
+    }
+    #bottom .form-check-label input:checked + span {
+        background-size: 14px 14px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

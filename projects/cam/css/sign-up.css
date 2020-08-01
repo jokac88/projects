@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+html,
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #9d0a1c;
+	margin: 0 auto;
+	width: 100%;
+	height: 100vh;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+
+i {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+hr {
+	margin-top: 2px;
+}
+
+button {
+	cursor: pointer;
+}
+
+input:focus {
+	box-shadow: none!important;
+}
+
+.container {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#content {
+	height: 100vh;
+}
+
+#left {
+	height: 100vh;
+	padding: 0 8%;
+}
+
+#left .row {
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#left .item img {
+	-webkit-box-shadow: 0px 50px 50px -50px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 50px 50px -50px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 50px 50px -50px rgba(0, 0, 0, 0.75);
+	-webkit-transition: all 300ms ease-in;
+	-webkit-transform: scale(1);
+	-ms-transition: all 300ms ease-in;
+	-ms-transform: scale(1);
+	-moz-transition: all 300ms ease-in;
+	-moz-transform: scale(1);
+	transition: all 300ms ease-in;
+	transform: scale(1);
+}
+
+#left .item img:hover {
+	-webkit-transition: all 500ms ease-in;
+	-webkit-transform: scale(1.15);
+	-ms-transition: all 500ms ease-in;
+	-ms-transform: scale(1.15);
+	-moz-transition: all 500ms ease-in;
+	-moz-transform: scale(1.15);
+	transition: all 500ms ease-in;
+	transform: scale(1.15);
+	z-index: 1;
+}
+
+#left .first {
+	padding: 0 3%;
+}
+
+#left .first img {
+	margin-bottom: 30%;
+}
+
+#left .first img:last-child {
+	margin-bottom: 0;
+}
+
+#left .second {
+	padding: 0 3%;
+}
+
+#left .second img {
+	margin-bottom: 25%;
+}
+
+#left .second img:first-child {
+	margin-top: 15%;
+}
+
+#left .second img:last-child {
+	margin-top: 5%;
+	margin-bottom: 0;
+}
+
+#left .third {
+	padding: 0 3%;
+}
+
+#left .third img {
+	margin-bottom: 45%;
+}
+
+#left .third img:last-child {
+	margin-bottom: 0;
+}
+
+#right {
+	height: 100vh;
+	padding: 0 4%;
+	-webkit-box-shadow: -10px 0px 30px -10px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -10px 0px 30px -10px rgba(0, 0, 0, 0.75);
+	box-shadow: -10px 0px 30px -10px rgba(0, 0, 0, 0.75);
+}
+
+#right .row {
+	height: 25%;
+	margin: 0;
+	padding: 0;
+}
+
+#right .header a {
+	color: #9d0a1c;
+}
+
+#right form {
+	height: 65%;
+}
+
+#right .form-group {
+	position: relative;
+	margin-bottom: 20px;
+	color: #9d0a1c;
+	font-size: 12px;
+}
+
+#right .form-control {
+	border-bottom: 2px solid #9d0a1c!important;
+	color: #9d0a1c;
+	font-size: 12px;
+	padding-left: 8px;
+}
+
+#right .floating-label {
+	position: absolute;
+	font-size: 12px;
+	pointer-events: none;
+	left: 8px;
+	bottom: 6px;
+	transition: 0.2s ease all;
+}
+
+#right input:focus ~ .floating-label,
+#right input:not(:focus):valid ~ .floating-label {
+	bottom: 27px;
+}
+
+#right #btn-sign-up {
+	background-color: transparent;
+	border: 2px solid #9d0a1c;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	height: 40px;
+	padding: 0;
+}
+
+#right #btn-sign-up a {
+	display: block;
+	line-height: 38px;
+	color: #9d0a1c;
+	font-weight: bold;
+}
+
+#right #btn-sign-up:hover {
+	transition: 0.3s;
+	background-color: #9d0a1c;
+}
+
+#right #btn-sign-up a:hover {
+	transition: 0.3s;
+	color: #ffffff;
+}
+
+#right #btn-sign-up:focus {
+	box-shadow: none;
+}
+
+#right .log-in {
+	color: #9d0a1c;
+	font-weight: bold;
+}
+
+#right .form-check {
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+
+#right .form-check-label input {
+	display: none;
+	position: relative;
+	z-index: -9999;
+}
+
+#right .form-check-label span {
+	position: absolute;
+	top: 15%;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	display: block;
+	background: url('../img/check%20box%202.png') center center no-repeat;
+}
+
+#right .form-check-label input:checked + span {
+	background: url('../img/check%20box%201.png') center center no-repeat;
+}
+
+#right .navbar-footer {
+	position: relative;
+	height: 10%;
+}
+
+#right nav ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#right nav ul li {
+	display: inline-block;
+}
+
+#right nav ul li a {
+	color: #9d0a1c;
+	padding-left: 25px;
+	font-size: 14px;
+}
+
+/*
+@media (max-width: 575px) {
+    #left {
+        padding: 25px 15px 25px;
+        overflow-y: auto;
+        height: 45vh;
+    }
+    #left::-webkit-scrollbar {
+        display: none;
+    }
+    #left .item.first img {
+        margin-bottom: 30px;
+    }
+    #left .item.second img {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #left .item.third img {
+        margin-bottom: 45px;
+    }
+    #right {
+        margin: 0 15px 15px;
+        padding: 0 15px;
+        height: 55vh;
+        -webkit-box-shadow: 0px -5px 40px -15px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px -5px 40px -15px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px -5px 40px -15px rgba(0, 0, 0, 0.75);
+    }
+    #right h1.header {
+        font-weight: bold;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    #right #btn-sign-up {
+        padding: 6px 0;
+        margin: 10px 0;
+        height: 30px;
+    }
+    #right #btn-sign-up a {
+        line-height: 28px;
+    }
+    #right .mb-1 {
+        margin: 0!important;
+    }
+    #right nav ul {
+        float: none;
+        text-align: center;
+        padding-top: 30px;
+    }
+    #right nav ul li {
+        text-align: center;
+    }
+    #right nav ul li a {
+        line-height: 28px;
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    #right nav ul li a img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #left {
+        padding: 25px 15px 25px;
+        overflow-y: auto;
+        height: 300px;
+    }
+    #left::-webkit-scrollbar {
+        display: none;
+    }
+    #left .item.first img {
+        margin-bottom: 30px;
+    }
+    #left .item.second img {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #left .item.third img {
+        margin-bottom: 45px;
+    }
+    #right {
+        margin: 0 15px 15px;
+        padding: 0 15px;
+        -webkit-box-shadow: 0px -5px 40px -15px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px -5px 40px -15px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px -5px 40px -15px rgba(0, 0, 0, 0.75);
+    }
+    #right h1.header {
+        font-weight: bold;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    #right #btn-sign-up {
+        padding: 6px 0;
+        margin: 10px 0;
+        height: 30px;
+    }
+    #right #btn-sign-up a {
+        line-height: 28px;
+    }
+    #right .mb-1 {
+        margin: 0!important;
+    }
+    #right nav ul {
+        float: none;
+        text-align: center;
+        padding-top: 30px;
+    }
+    #right nav ul li {
+        text-align: center;
+    }
+    #right nav ul li a {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    #right nav ul li a img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #left {
+        padding: 25px 15px 25px;
+        overflow-y: auto;
+        height: 400px;
+    }
+    #left::-webkit-scrollbar {
+        display: none;
+    }
+    #left .item.first img {
+        margin-bottom: 30px;
+    }
+    #left .item.second img {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #left .item.third img {
+        margin-bottom: 45px;
+    }
+    #right {
+        margin: 0 15px 15px;
+        padding: 0 15px;
+        -webkit-box-shadow: 0px -5px 40px -15px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px -5px 40px -15px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px -5px 40px -15px rgba(0, 0, 0, 0.75);
+    }
+    #right h1.header {
+        font-weight: bold;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    #right #btn-sign-up {
+        padding: 6px 0;
+        margin: 10px 0;
+        height: 30px;
+    }
+    #right #btn-sign-up a {
+        line-height: 28px;
+    }
+    #right .mb-1 {
+        margin: 0!important;
+    }
+    #right nav ul {
+        float: none;
+        text-align: center;
+        padding-top: 30px;
+    }
+    #right nav ul li {
+        text-align: center;
+    }
+    #right nav ul li a {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    #right nav ul li a img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #right {
+        padding: 30px 20px;
+    }
+    #right h1.header {
+        padding: 50px;
+    }
+    #right nav ul {
+        text-align: center;
+        padding-top: 50px;
+    }
+    #right nav ul li a {
+        padding-left: 15px;
+    }
+}
+*/
+
+@media (min-width: 1200px) {}

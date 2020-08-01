@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #9d0a1c!important;
+    margin: 0 auto;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+hr {
+    margin-top: 2px;
+}
+
+button:focus,
+input:focus {
+    box-shadow: none!important;
+    outline: none!important;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.clr {
+    clear: both;
+}
+
+header {
+    border-bottom: 2px solid #9d0a1c;
+    height: 70px;
+}
+
+header nav a.navbar-brand {
+    font-size: 30px;
+    color: #9d0a1c!important;
+}
+
+header nav a.navbar-brand-2 {
+    font-size: 16px;
+    color: #9d0a1c;
+}
+
+header nav .nav-item.dropdown,
+header nav #search {
+    border: 1px solid #9d0a1c;
+}
+
+header nav .nav-item {
+    display: inline-block
+}
+
+header nav .nav-item a,
+header nav #search {
+    color: #9d0a1c!important;
+    padding: 3px 5px!important;
+}
+
+header nav .nav-item #search {
+    width: 80%;
+    margin-right: 10px;
+}
+
+header nav #search {
+    background-color: transparent;
+    background: url('../img/search.png') right center no-repeat;
+    background-size: 24px;
+    background-position: 90% 50%;
+}
+
+header nav #search::placeholder {
+    color: #9d0a1c;
+}
+
+header nav #search:focus {
+    background-image: none;
+}
+
+header nav a.dropdown-item:hover {
+    color: #ffffff!important;
+    background-color: #9d0a1c;
+}
+
+header nav .dropdown-toggle::after {
+    vertical-align: 3px!important;
+}
+
+header nav .nav-item img {
+    width: 32px;
+}
+
+header nav .badge.badge-default {
+    color: #808080;
+    font-size: 16px;
+}
+
+header nav .navbar-nav.ml-auto {
+    position: relative;
+}
+
+header nav #notification.badge {
+    background-color: #9d0a1c;
+    color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+
+header nav .nav-item.dropdown.profile {
+    border: none;
+}
+
+header nav .dropdown-menu.profile {
+    position: absolute;
+    right: 0;
+    left: auto;
+    -webkit-box-shadow: 0px 20px 100px -20px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 20px 100px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 20px 100px -20px rgba(0, 0, 0, 0.75);
+}
+
+header nav .dropdown-menu.profile a.dropdown-item {
+    padding: 15px 0 10px 25px!important;
+    color: #4a4c49!important;
+}
+
+header nav .dropdown-menu.profile a.dropdown-item:hover {
+    background-color: transparent;
+    color: #9d0a1c!important;
+}
+
+header nav .dropdown-menu.profile .dropdown-item {
+    padding: 15px 0 10px 25px!important;
+}
+
+header nav .dropdown-menu.profile .dropdown-item.logout {
+    border-top: 3px solid #9d0a1c;
+    padding-left: 15px!important;
+}
+
+header nav .dropdown-toggle.profile::after {
+    display: none;
+}
+
+#content {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#content .main-img {
+    position: relative;
+}
+
+#content .play {
+    position: absolute;
+    left: 48.5%;
+    top: 50%;
+}
+
+#content .follow-me {
+    position: absolute;
+    width: 25%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    background-color: #9d0a1c;
+    -webkit-box-shadow: -7px 7px 30px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -7px 7px 30px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -7px 7px 30px -10px rgba(0, 0, 0, 0.75);
+}
+
+#content .credits {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 25%;
+    text-align: center;
+}
+
+#content .credits img {
+    width: 9%;
+    padding: 5px;
+    background-color: #000000;
+    border: 3px solid #b5b5b5;
+    border-radius: 50%;
+}
+
+#chat {
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    background-color: #9d0a1c;
+    width: 75%;
+    height: 585px;
+    -webkit-box-shadow: 0px 40px 50px -40px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 40px 50px -40px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 40px 50px -40px rgba(0, 0, 0, 0.75);
+}
+
+#chat .private {
+    display: block;
+    width: 95%;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 2px 5px;
+    margin-bottom: 20px;
+}
+
+#chat .private::placeholder {
+    font-size: 13px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+#chat .private:active::placeholder,
+#chat .private:focus::placeholder {
+    color: transparent;
+}
+
+#chat .chat-top {
+    padding: 10px 10px 10px;
+}
+
+#chat .chat-top span {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#chat .chat-top img {
+    width: 25%;
+    height: 50px;
+    margin-right: 5px;
+    margin-bottom: 28px;
+}
+
+#chat .chat-top .float-right {
+    margin: 0;
+    margin-left: 5px;
+    margin-bottom: 28px;
+}
+
+#chat .chat-bottom {
+    position: relative;
+    background-color: #9d0a1c;
+    padding: 10px;
+    padding-right: 5px;
+    border-top: 1px solid #000000;
+}
+
+#chat .chat-notification {
+    position: absolute;
+    left: 3%;
+    top: -50%;
+    padding: 1px 7px;
+    text-align: center;
+    background-color: #9d0a1c;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
+#chat .chat-left,
+#chat .chat-icon {
+    display: inline-block;
+}
+
+#chat .chat-icon img {
+    padding: 0 5px;
+    width: 25%;
+}
+
+#right-side {
+    display: inline-block;
+    border-left: 1px solid #000000;
+    background-color: #9d0a1c;
+    text-align: center;
+    width: 25%;
+}
+
+#right-side #chat-img {
+    height: 540px;
+    overflow-y: auto;
+}
+
+#right-side #chat-img::-webkit-scrollbar {
+    display: none;
+}
+
+#right-side #chat-img img {
+    display: block;
+    padding: 10px 0 5px;
+    margin: 0 auto;
+    width: 70%;
+    height: 51px;
+}
+
+#right-side #btn-hide {
+    height: 45px;
+}
+
+#right-side #btn-hide button {
+    line-height: 45px;
+    background-color: transparent;
+}
+
+#content .chat-text-bottom {
+    color: #808080;
+}
+
+footer {
+    border-top: 5px solid #ffffff;
+    background-color: #ebebeb;
+    padding: 20px 0;
+}
+
+footer h6 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    list-style-type: none;
+    padding: 0 0 10px;
+}
+
+footer li a {
+    color: #795442;
+}
+
+footer li a:hover {
+    color: #9d0a1c;
+    transition: 0.3s;
+}
+
+footer .footer-social {
+    background-color: #9d0a1c;
+    padding: 2px 0;
+}
+
+footer ul.nav.nav-pills {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul.nav.nav-pills li {
+    padding-bottom: 0;
+}
+
+footer ul.nav.nav-pills a {
+    padding: 0 8px;
+}
+
+footer ul.nav.nav-pills a:hover {
+    opacity: 0.5;
+}
+
+footer .newsletter {
+    color: #C0C0C0;
+}
+
+footer input#newsletter,
+footer #btn-arrow {
+    color: #9d0a1c;
+    border-bottom: 1px solid #4a4c49!important;
+    background-color: transparent;
+}
+
+footer .qr-code {
+    width: 33%;
+    background-color: #ffffff;
+}
+
+footer .advertise {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+footer .advertise a {
+    text-align: center;
+    color: #9d0a1c;
+    background-color: #ffffff;
+    padding: 5px 50px;
+    border: 2px solid #9d0a1c;
+}
+
+footer .advertise a:hover {
+    color: #ffffff;
+    background-color: #9d0a1c;
+    transition: 0.3s;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    font-size: 11px;
+    color: #4a4c49;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .footer-all-rights {
+    font-size: 11px;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+footer .logo-footer:hover {
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media (max-width: 575px) {
+    header,
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    header {
+        background-size: cover;
+        background-position: left top;
+    }
+    header nav .nav-item {
+        margin: 10px 0 5px 0;
+        width: 50%;
+    }
+    header nav #search {
+        width: 100%;
+        background-position: 95% center;
+    }
+    nav li.nav-item-login {
+        padding: 10px 0 0;
+    }
+    header nav .nav-item-login a {
+        float: right;
+        background-color: #9d0a1c;
+        padding: 5px 10px;
+        color: #ffffff!important;
+        border-radius: 5px;
+    }
+    header nav .navbar-brand-1 {
+        padding: 0;
+    }
+    header #nav {
+        padding: 15px;
+    }
+    header nav button.navbar-toggler.navbar-toggler-right {
+        margin-top: 2px!important;
+        border: 1px solid #9d0a1c!important;
+    }
+    header nav span.navbar-toggler-icon {
+        background: url('../img/menu-4-24.png') center center no-repeat!important;
+    }
+    header nav .nav-item-login {
+        margin-left: 0;
+    }
+    footer .col-lg-2 {
+        padding-bottom: 15px;
+        width: 55%;
+    }
+    footer img.qr-code {
+        width: 38%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    header,
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    header nav .navbar-brand-1 {
+        padding: 0;
+    }
+    header nav .nav-item-login a {
+        float: right;
+        background-color: #9d0a1c;
+        padding: 5px 10px;
+        color: #ffffff!important;
+        border-radius: 5px;
+    }
+    header #nav {
+        padding: 15px;
+    }
+    header nav button.navbar-toggler.navbar-toggler-right {
+        margin-top: 2px!important;
+        border: 1px solid #9d0a1c!important;
+    }
+    header nav button.navbar-toggler.navbar-toggler-right {
+        margin-top: 2px!important;
+        border: 1px solid #9d0a1c!important;
+    }
+    header nav span.navbar-toggler-icon {
+        background: url('../img/menu-4-24.png') center center no-repeat!important;
+    }
+    footer .col-lg-2 {
+        padding-bottom: 15px;
+        width: 31%;
+    }
+    footer img.qr-code {
+        width: 38%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header,
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    header {
+        background-size: cover;
+        background-position: left top;
+    }
+    footer .qr-code {
+        width: 39.5%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    footer img.qr-code {
+        width: 28%;
+    }
+}
+
+@media (min-width: 1200px) {}

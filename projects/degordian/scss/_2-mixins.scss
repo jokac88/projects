@@ -1,0 +1,47 @@
+// *****************
+// Mixins
+// *****************
+
+@mixin first-last-child-mx {
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+@mixin first-last-child-my {
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@mixin first-last-child-px {
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+@mixin first-last-child-py {
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+// *****************
+// Mixins
+// *****************

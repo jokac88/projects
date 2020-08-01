@@ -1,0 +1,154 @@
+body:before {
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background: url('../img/background/3.jpg') no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#news {
+	margin: 50px 0;
+	color: #ffffff;
+}
+
+#news .news-icon {
+	background-color: #501932;
+	border-radius: 8px;
+	padding: 10px;
+	width: 50px;
+}
+
+#news .date {
+	border-bottom: 2px solid #ffffff;
+}
+
+#news .text-center {
+	margin-bottom: 30px;
+	padding: 20px;
+	background: rgba(50, 25, 50, 0.8);
+}
+
+#news .news {
+	text-align: justify;
+	text-align-last: center;
+}
+
+#news #second-page,
+#news #third-page {
+	display: none;
+}
+
+#news .page-item {
+	margin: 20px 10px 0;
+}
+
+#news .page-item a {
+	font-weight: bold;
+	color: #501932;
+	border: 1px solid #501932;
+}
+
+#news .page-link:focus {
+	box-shadow: none;
+}
+
+#news .page-item.active .page-link {
+	background-color: #501932;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+/* Media queries */
+
+/*----------------------------
+	@media only screen and (max-width: 319px) start
+----------------------------*/
+
+@media only screen and (max-width: 319px) {}
+
+/*----------------------------
+	@media only screen and (max-width: 319px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	
+	#news {
+		margin: 30px 0;
+	}
+}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) start
+----------------------------*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) end
+----------------------------*/
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) start
+----------------------------*/
+
+@media only screen and (min-width: 1366px) {}
+
+/*----------------------------
+	@media only screen and (min-width: 1366px) end
+----------------------------*/

@@ -1,0 +1,52 @@
+#app,
+body {
+    margin: 0;
+    font-family: 'Calibri', sans-serif;
+    color: white;
+    background-color: #26323B;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.demo {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    word-break: break-all;
+    text-align: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.white {
+    background-color: white;
+}
