@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", {data:[{}],fetch:[],mutations:[["personalInfo\u002FSET_PERSONAL_INFO",{firstName:"Ivan",lastName:"Jovkovic",age:"31"}]]});
